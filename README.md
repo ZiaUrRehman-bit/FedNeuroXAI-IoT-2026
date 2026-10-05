@@ -344,4 +344,4 @@ The Llama 3.2 model is subject to Meta's Llama 3.2 Community License.
 This research is supported in part by the Federated Offline Reflection
 Grammatical Evolution (FORGE) project funded by Research Ireland.
 
-Contact: Zia Ur Rehman, University of Limerick (rehman.zia@ul.ie).
+Contact: Zia Ur Rehman, University of Limerick (https://bds.ul.ie/members/zia-ur-rehman.html).
