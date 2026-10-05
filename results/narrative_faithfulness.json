@@ -1,0 +1,263 @@
+{
+  "summary": {
+    "n_narratives_generated": 18,
+    "n_skipped_no_rules": 0,
+    "total_thresholds_checked": 367,
+    "total_matched_verbatim": 360,
+    "overall_faithfulness_rate": 0.9809,
+    "n_narratives_zero_hallucinations": 14
+  },
+  "per_client": [
+    {
+      "dataset": "Diabetes",
+      "model": "logistic_regression",
+      "client": 0,
+      "n_rules_shown": 12,
+      "wall_seconds": 259.5,
+      "n_thresholds_in_narrative": 42,
+      "n_matched_verbatim": 42,
+      "n_unmatched": 0,
+      "unmatched_values": [],
+      "faithfulness_rate": 1.0
+    },
+    {
+      "dataset": "Diabetes",
+      "model": "linear_svm",
+      "client": 0,
+      "n_rules_shown": 12,
+      "wall_seconds": 311.4,
+      "n_thresholds_in_narrative": 42,
+      "n_matched_verbatim": 42,
+      "n_unmatched": 0,
+      "unmatched_values": [],
+      "faithfulness_rate": 1.0
+    },
+    {
+      "dataset": "Diabetes",
+      "model": "mlp",
+      "client": 0,
+      "n_rules_shown": 6,
+      "wall_seconds": 267.6,
+      "n_thresholds_in_narrative": 18,
+      "n_matched_verbatim": 18,
+      "n_unmatched": 0,
+      "unmatched_values": [],
+      "faithfulness_rate": 1.0
+    },
+    {
+      "dataset": "Diabetes",
+      "model": "gaussian_nb",
+      "client": 0,
+      "n_rules_shown": 12,
+      "wall_seconds": 328.1,
+      "n_thresholds_in_narrative": 6,
+      "n_matched_verbatim": 6,
+      "n_unmatched": 0,
+      "unmatched_values": [],
+      "faithfulness_rate": 1.0
+    },
+    {
+      "dataset": "Diabetes",
+      "model": "lda",
+      "client": 0,
+      "n_rules_shown": 12,
+      "wall_seconds": 306.1,
+      "n_thresholds_in_narrative": 24,
+      "n_matched_verbatim": 24,
+      "n_unmatched": 0,
+      "unmatched_values": [],
+      "faithfulness_rate": 1.0
+    },
+    {
+      "dataset": "WBC",
+      "model": "logistic_regression",
+      "client": 3,
+      "n_rules_shown": 6,
+      "wall_seconds": 232.4,
+      "n_thresholds_in_narrative": 26,
+      "n_matched_verbatim": 26,
+      "n_unmatched": 0,
+      "unmatched_values": [],
+      "faithfulness_rate": 1.0
+    },
+    {
+      "dataset": "WBC",
+      "model": "linear_svm",
+      "client": 3,
+      "n_rules_shown": 6,
+      "wall_seconds": 229.0,
+      "n_thresholds_in_narrative": 25,
+      "n_matched_verbatim": 25,
+      "n_unmatched": 0,
+      "unmatched_values": [],
+      "faithfulness_rate": 1.0
+    },
+    {
+      "dataset": "WBC",
+      "model": "mlp",
+      "client": 2,
+      "n_rules_shown": 6,
+      "wall_seconds": 217.0,
+      "n_thresholds_in_narrative": 12,
+      "n_matched_verbatim": 9,
+      "n_unmatched": 3,
+      "unmatched_values": [
+        "0.0546",
+        "0.0036",
+        "0.0058"
+      ],
+      "faithfulness_rate": 0.75
+    },
+    {
+      "dataset": "WBC",
+      "model": "gaussian_nb",
+      "client": 3,
+      "n_rules_shown": 6,
+      "wall_seconds": 265.5,
+      "n_thresholds_in_narrative": 18,
+      "n_matched_verbatim": 18,
+      "n_unmatched": 0,
+      "unmatched_values": [],
+      "faithfulness_rate": 1.0
+    },
+    {
+      "dataset": "WBC",
+      "model": "lda",
+      "client": 3,
+      "n_rules_shown": 6,
+      "wall_seconds": 297.9,
+      "n_thresholds_in_narrative": 16,
+      "n_matched_verbatim": 16,
+      "n_unmatched": 0,
+      "unmatched_values": [],
+      "faithfulness_rate": 1.0
+    },
+    {
+      "dataset": "Heart",
+      "model": "logistic_regression",
+      "client": 0,
+      "n_rules_shown": 12,
+      "wall_seconds": 292.7,
+      "n_thresholds_in_narrative": 6,
+      "n_matched_verbatim": 6,
+      "n_unmatched": 0,
+      "unmatched_values": [],
+      "faithfulness_rate": 1.0
+    },
+    {
+      "dataset": "Heart",
+      "model": "linear_svm",
+      "client": 0,
+      "n_rules_shown": 12,
+      "wall_seconds": 277.5,
+      "n_thresholds_in_narrative": 14,
+      "n_matched_verbatim": 13,
+      "n_unmatched": 1,
+      "unmatched_values": [
+        "-140.0"
+      ],
+      "faithfulness_rate": 0.929
+    },
+    {
+      "dataset": "Heart",
+      "model": "mlp",
+      "client": 0,
+      "n_rules_shown": 12,
+      "wall_seconds": 272.0,
+      "n_thresholds_in_narrative": 6,
+      "n_matched_verbatim": 6,
+      "n_unmatched": 0,
+      "unmatched_values": [],
+      "faithfulness_rate": 1.0
+    },
+    {
+      "dataset": "Heart",
+      "model": "gaussian_nb",
+      "client": 0,
+      "n_rules_shown": 12,
+      "wall_seconds": 284.3,
+      "n_thresholds_in_narrative": 16,
+      "n_matched_verbatim": 16,
+      "n_unmatched": 0,
+      "unmatched_values": [],
+      "faithfulness_rate": 1.0
+    },
+    {
+      "dataset": "Heart",
+      "model": "lda",
+      "client": 0,
+      "n_rules_shown": 12,
+      "wall_seconds": 298.9,
+      "n_thresholds_in_narrative": 0,
+      "n_matched_verbatim": 0,
+      "n_unmatched": 0,
+      "unmatched_values": [],
+      "faithfulness_rate": null
+    },
+    {
+      "dataset": "FetalHeartRate",
+      "model": "logistic_regression",
+      "client": 0,
+      "n_rules_shown": 12,
+      "wall_seconds": 328.6,
+      "n_thresholds_in_narrative": 18,
+      "n_matched_verbatim": 18,
+      "n_unmatched": 0,
+      "unmatched_values": [],
+      "faithfulness_rate": 1.0
+    },
+    {
+      "dataset": "FetalHeartRate",
+      "model": "linear_svm",
+      "client": 0,
+      "n_rules_shown": 6,
+      "wall_seconds": 265.8,
+      "n_thresholds_in_narrative": 20,
+      "n_matched_verbatim": 19,
+      "n_unmatched": 1,
+      "unmatched_values": [
+        "0.003"
+      ],
+      "faithfulness_rate": 0.95
+    },
+    {
+      "dataset": "FetalHeartRate",
+      "model": "mlp",
+      "client": 0,
+      "n_rules_shown": 12,
+      "wall_seconds": 306.2,
+      "n_thresholds_in_narrative": 32,
+      "n_matched_verbatim": 30,
+      "n_unmatched": 2,
+      "unmatched_values": [
+        "0.0279",
+        "0.0279"
+      ],
+      "faithfulness_rate": 0.938
+    },
+    {
+      "dataset": "FetalHeartRate",
+      "model": "gaussian_nb",
+      "client": 0,
+      "n_rules_shown": 12,
+      "wall_seconds": 300.8,
+      "n_thresholds_in_narrative": 0,
+      "n_matched_verbatim": 0,
+      "n_unmatched": 0,
+      "unmatched_values": [],
+      "faithfulness_rate": null
+    },
+    {
+      "dataset": "FetalHeartRate",
+      "model": "lda",
+      "client": 0,
+      "n_rules_shown": 6,
+      "wall_seconds": 277.2,
+      "n_thresholds_in_narrative": 26,
+      "n_matched_verbatim": 26,
+      "n_unmatched": 0,
+      "unmatched_values": [],
+      "faithfulness_rate": 1.0
+    }
+  ]
+}

@@ -1,0 +1,542 @@
+{
+  "dataset": "heart",
+  "model": "lda",
+  "partition": "dirichlet",
+  "n_clients": 5,
+  "alpha": 0.5,
+  "n_rounds": 100,
+  "n_bins": 4,
+  "rule_epochs": 10,
+  "global_metrics": {
+    "accuracy": 0.8571,
+    "f1": 0.8573
+  },
+  "per_client": [
+    {
+      "client_id": 0,
+      "n_train": 126,
+      "n_test": 54,
+      "n_rules": 103,
+      "fidelity_metrics": {
+        "completeness": 1.0,
+        "correctness": 0.8518518518518519,
+        "fidelity": 0.8518518518518519,
+        "num_rules": 103,
+        "avg_length": 1.9611650485436893,
+        "class_coverage": 1.0,
+        "overlap": 0.0343084375066098,
+        "avg_support": 0.15151456310679615,
+        "avg_confidence": 0.8508834951456311,
+        "avg_zhang": 0.4843980582524273
+      },
+      "instance_explanations": [
+        {
+          "fired_rule": {
+            "antecedents": "exercise_angina=1 AND ST_slope=2",
+            "consequent": "class=1",
+            "confidence": 0.926,
+            "support": 0.198
+          },
+          "shap_ranking": {
+            "max_heart_rate": 0.6969979527722386,
+            "cholesterol": 0.6225222561967694,
+            "exercise_angina": 0.603441839983068,
+            "oldpeak": 0.41457016631966215,
+            "sex": 0.32494939587966076,
+            "ST_slope": 0.2805729720772222,
+            "fasting_blood_sugar": 0.278352104281288,
+            "chest_pain_type": 0.2749513630273022,
+            "resting_bp_s": 0.1329781102391032,
+            "age": 0.1278787436057827,
+            "resting_ecg": 0.06398182396904373
+          },
+          "lime_ranking": {
+            "fasting_blood_sugar": 0.15721223029204554,
+            "oldpeak": 0.11785862336609494,
+            "exercise_angina": 0.10629122534266477,
+            "max_heart_rate": 0.09456542069517299,
+            "cholesterol": 0.08602320945120795
+          },
+          "shap_error": null,
+          "lime_error": null,
+          "rule_shap_overlap": 0.25,
+          "rule_lime_overlap": 0.25
+        },
+        {
+          "fired_rule": {
+            "antecedents": "chest_pain_type=4 AND exercise_angina=1",
+            "consequent": "class=1",
+            "confidence": 0.967,
+            "support": 0.23
+          },
+          "shap_ranking": {
+            "chest_pain_type": 0.7070177906416341,
+            "exercise_angina": 0.603441839983068,
+            "cholesterol": 0.3250916512293687,
+            "sex": 0.32494939587966076,
+            "ST_slope": 0.2805729720772222,
+            "fasting_blood_sugar": 0.278352104281288,
+            "oldpeak": 0.23184901193344926,
+            "max_heart_rate": 0.21697181449934705,
+            "resting_bp_s": 0.1329781102391032,
+            "resting_ecg": 0.06398182396904373,
+            "age": 0.03440012985886552
+          },
+          "lime_ranking": {
+            "chest_pain_type": 0.3139872578579105,
+            "fasting_blood_sugar": 0.15818072643494047,
+            "oldpeak": 0.15427806738531508,
+            "exercise_angina": 0.11106849226356302,
+            "max_heart_rate": 0.10437760332523788
+          },
+          "shap_error": null,
+          "lime_error": null,
+          "rule_shap_overlap": 0.6666666666666666,
+          "rule_lime_overlap": 0.25
+        },
+        {
+          "fired_rule": {
+            "antecedents": "chest_pain_type=2 AND exercise_angina=0",
+            "consequent": "class=0",
+            "confidence": 1.0,
+            "support": 0.198
+          },
+          "shap_ranking": {
+            "chest_pain_type": 1.2569205166962385,
+            "ST_slope": 0.7985538436044021,
+            "exercise_angina": 0.5140430488744654,
+            "oldpeak": 0.41457016631966215,
+            "sex": 0.32494939587966076,
+            "age": 0.2961402483502336,
+            "fasting_blood_sugar": 0.278352104281288,
+            "resting_bp_s": 0.20039319676700512,
+            "resting_ecg": 0.12420001123402606,
+            "cholesterol": 0.10618272597336198,
+            "max_heart_rate": 0.059043215007565694
+          },
+          "lime_ranking": {
+            "chest_pain_type": 0.3772927589647005,
+            "fasting_blood_sugar": 0.16063168932153296,
+            "oldpeak": 0.12547358078652798,
+            "exercise_angina": 0.10880125099180987,
+            "ST_slope": 0.09432180822322117
+          },
+          "shap_error": null,
+          "lime_error": null,
+          "rule_shap_overlap": 0.6666666666666666,
+          "rule_lime_overlap": 0.25
+        }
+      ]
+    },
+    {
+      "client_id": 1,
+      "n_train": 146,
+      "n_test": 63,
+      "n_rules": 101,
+      "fidelity_metrics": {
+        "completeness": 1.0,
+        "correctness": 0.8253968253968254,
+        "fidelity": 0.8253968253968254,
+        "num_rules": 101,
+        "avg_length": 1.9306930693069306,
+        "class_coverage": 1.0,
+        "overlap": 0.054056262769134125,
+        "avg_support": 0.2115643564356435,
+        "avg_confidence": 0.9227722772277228,
+        "avg_zhang": 0.2780693069306931
+      },
+      "instance_explanations": [
+        {
+          "fired_rule": {
+            "antecedents": "exercise_angina=0 AND oldpeak=(-0.101, 0.0]",
+            "consequent": "class=0",
+            "confidence": 1.0,
+            "support": 0.473
+          },
+          "shap_ranking": {
+            "chest_pain_type": 1.1194448351825872,
+            "sex": 0.3249493958796607,
+            "ST_slope": 0.25899043576358943,
+            "oldpeak": 0.2344346886464617,
+            "exercise_angina": 0.1787975822172051,
+            "cholesterol": 0.17179591742917055,
+            "age": 0.14545272299020315,
+            "resting_bp_s": 0.13557099818248405,
+            "max_heart_rate": 0.09840535834594281,
+            "resting_ecg": 0.06774546067310512,
+            "fasting_blood_sugar": 0.05060947350568856
+          },
+          "lime_ranking": {
+            "chest_pain_type": 0.3371435954279082,
+            "fasting_blood_sugar": 0.18373339204104183,
+            "exercise_angina": 0.13611114509155278,
+            "ST_slope": 0.11636871831476138,
+            "oldpeak": 0.09661050295358242
+          },
+          "shap_error": null,
+          "lime_error": null,
+          "rule_shap_overlap": 0.0,
+          "rule_lime_overlap": 0.25
+        },
+        {
+          "fired_rule": {
+            "antecedents": "fasting_blood_sugar=0 AND exercise_angina=0",
+            "consequent": "class=0",
+            "confidence": 0.897,
+            "support": 0.712
+          },
+          "shap_ranking": {
+            "ST_slope": 1.8992631955996588,
+            "sex": 0.3249493958796607,
+            "exercise_angina": 0.1787975822172051,
+            "cholesterol": 0.137531911736926,
+            "chest_pain_type": 0.13747568151365092,
+            "resting_ecg": 0.12043637452996465,
+            "age": 0.05197410924328596,
+            "fasting_blood_sugar": 0.05060947350568856,
+            "max_heart_rate": 0.0456024831359247,
+            "oldpeak": 0.018961629228757885,
+            "resting_bp_s": 0.0033337130700610558
+          },
+          "lime_ranking": {
+            "fasting_blood_sugar": 0.19772664595127365,
+            "ST_slope": 0.12939831292296783,
+            "exercise_angina": 0.1061403646444824,
+            "cholesterol": 0.06256290150491968,
+            "chest_pain_type": 0.0557619582237565
+          },
+          "shap_error": null,
+          "lime_error": null,
+          "rule_shap_overlap": 0.25,
+          "rule_lime_overlap": 0.6666666666666666
+        },
+        {
+          "fired_rule": {
+            "antecedents": "max_heart_rate=(169.0, 202.0]",
+            "consequent": "class=0",
+            "confidence": 0.968,
+            "support": 0.205
+          },
+          "shap_ranking": {
+            "ST_slope": 1.8992631955996588,
+            "fasting_blood_sugar": 1.214627364136529,
+            "max_heart_rate": 0.549629928322461,
+            "sex": 0.3249493958796607,
+            "exercise_angina": 0.1787975822172051,
+            "age": 0.1723745637493153,
+            "chest_pain_type": 0.13747568151365092,
+            "oldpeak": 0.11032220642186444,
+            "resting_ecg": 0.06774546067310512,
+            "resting_bp_s": 0.0496352834875761,
+            "cholesterol": 0.03937981209768382
+          },
+          "lime_ranking": {
+            "fasting_blood_sugar": 0.19605229583588274,
+            "exercise_angina": 0.13432012921747377,
+            "ST_slope": 0.10986464390236629,
+            "max_heart_rate": 0.09562073335262572,
+            "resting_bp_s": 0.06098618134827414
+          },
+          "shap_error": null,
+          "lime_error": null,
+          "rule_shap_overlap": 0.3333333333333333,
+          "rule_lime_overlap": 0.0
+        }
+      ]
+    },
+    {
+      "client_id": 2,
+      "n_train": 46,
+      "n_test": 20,
+      "n_rules": 54,
+      "fidelity_metrics": {
+        "completeness": 1.0,
+        "correctness": 0.55,
+        "fidelity": 0.55,
+        "num_rules": 54,
+        "avg_length": 1.8518518518518519,
+        "class_coverage": 0.5,
+        "overlap": 0.05314465408804978,
+        "avg_support": 0.276537037037037,
+        "avg_confidence": 0.9828148148148147,
+        "avg_zhang": 0.171
+      },
+      "instance_explanations": [
+        {
+          "fired_rule": {
+            "antecedents": "max_heart_rate=(59.999, 116.5]",
+            "consequent": "class=1",
+            "confidence": 1.0,
+            "support": 0.261
+          },
+          "shap_ranking": {
+            "sex": 0.9334726434431249,
+            "exercise_angina": 0.7045013429754012,
+            "fasting_blood_sugar": 0.41257722966594057,
+            "chest_pain_type": 0.25616586617450476,
+            "max_heart_rate": 0.19148868776755568,
+            "ST_slope": 0.18767422881419538,
+            "oldpeak": 0.1630100536464368,
+            "age": 0.1585072146143378,
+            "cholesterol": 0.11981280674012897,
+            "resting_bp_s": 0.11132508017776443,
+            "resting_ecg": 0.10840910071481194
+          },
+          "lime_ranking": null,
+          "shap_error": null,
+          "lime_error": "Input contains NaN.",
+          "rule_shap_overlap": 0.0,
+          "rule_lime_overlap": null
+        },
+        {
+          "fired_rule": {
+            "antecedents": "age=(58.0, 62.75] AND sex=1",
+            "consequent": "class=1",
+            "confidence": 1.0,
+            "support": 0.152
+          },
+          "shap_ranking": {
+            "chest_pain_type": 2.689741594832304,
+            "exercise_angina": 0.7045013429754012,
+            "oldpeak": 0.5077669487147629,
+            "fasting_blood_sugar": 0.41257722966594057,
+            "max_heart_rate": 0.34854071778944745,
+            "cholesterol": 0.30719408786959135,
+            "resting_bp_s": 0.29653136184782464,
+            "sex": 0.2270609132699493,
+            "ST_slope": 0.18767422881419538,
+            "resting_ecg": 0.10840910071481194,
+            "age": 0.04633287811803718
+          },
+          "lime_ranking": null,
+          "shap_error": null,
+          "lime_error": "Input contains NaN.",
+          "rule_shap_overlap": 0.0,
+          "rule_lime_overlap": null
+        },
+        {
+          "fired_rule": {
+            "antecedents": "chest_pain_type=4 AND ST_slope=2",
+            "consequent": "class=1",
+            "confidence": 1.0,
+            "support": 0.5
+          },
+          "shap_ranking": {
+            "exercise_angina": 0.7045013429754012,
+            "oldpeak": 0.5939561724818444,
+            "max_heart_rate": 0.48054790581449264,
+            "fasting_blood_sugar": 0.41257722966594057,
+            "age": 0.346277299619015,
+            "cholesterol": 0.28934825157154725,
+            "chest_pain_type": 0.25616586617450476,
+            "sex": 0.2270609132699493,
+            "ST_slope": 0.18767422881419538,
+            "resting_bp_s": 0.1664843423273258,
+            "resting_ecg": 0.07977273448825783
+          },
+          "lime_ranking": null,
+          "shap_error": null,
+          "lime_error": "Input contains NaN.",
+          "rule_shap_overlap": 0.0,
+          "rule_lime_overlap": null
+        }
+      ]
+    },
+    {
+      "client_id": 3,
+      "n_train": 226,
+      "n_test": 97,
+      "n_rules": 155,
+      "fidelity_metrics": {
+        "completeness": 1.0,
+        "correctness": 0.8247422680412371,
+        "fidelity": 0.8247422680412371,
+        "num_rules": 155,
+        "avg_length": 1.961290322580645,
+        "class_coverage": 1.0,
+        "overlap": 0.026587313584323004,
+        "avg_support": 0.13992258064516128,
+        "avg_confidence": 0.8719870967741936,
+        "avg_zhang": 0.39368387096774193
+      },
+      "instance_explanations": [
+        {
+          "fired_rule": {
+            "antecedents": "resting_bp_s=(130.0, 140.0] AND exercise_angina=1",
+            "consequent": "class=1",
+            "confidence": 1.0,
+            "support": 0.146
+          },
+          "shap_ranking": {
+            "exercise_angina": 0.4693436533201642,
+            "chest_pain_type": 0.4517058106877105,
+            "fasting_blood_sugar": 0.430180524798354,
+            "sex": 0.2553173824768763,
+            "oldpeak": 0.22323008955674112,
+            "cholesterol": 0.21391209109255443,
+            "ST_slope": 0.1510777541954273,
+            "resting_bp_s": 0.08538009584989772,
+            "max_heart_rate": 0.07680418212366268,
+            "resting_ecg": 0.05833636891295163,
+            "age": 0.016078321564469755
+          },
+          "lime_ranking": null,
+          "shap_error": null,
+          "lime_error": "Input contains NaN.",
+          "rule_shap_overlap": 0.25,
+          "rule_lime_overlap": null
+        },
+        {
+          "fired_rule": {
+            "antecedents": "cholesterol=(179.0, 229.0] AND exercise_angina=1",
+            "consequent": "class=1",
+            "confidence": 1.0,
+            "support": 0.119
+          },
+          "shap_ranking": {
+            "chest_pain_type": 2.494201650319098,
+            "exercise_angina": 0.4693436533201642,
+            "fasting_blood_sugar": 0.430180524798354,
+            "oldpeak": 0.35251392520736347,
+            "sex": 0.2553173824768763,
+            "resting_bp_s": 0.19242932665519252,
+            "age": 0.18433982630892068,
+            "ST_slope": 0.1510777541954273,
+            "resting_ecg": 0.12984546629011814,
+            "max_heart_rate": 0.11520627318549401,
+            "cholesterol": 0.044376646261136146
+          },
+          "lime_ranking": null,
+          "shap_error": null,
+          "lime_error": "Input contains NaN.",
+          "rule_shap_overlap": 0.25,
+          "rule_lime_overlap": null
+        },
+        {
+          "fired_rule": {
+            "antecedents": "chest_pain_type=4 AND oldpeak=(2.0, 4.2]",
+            "consequent": "class=1",
+            "confidence": 1.0,
+            "support": 0.159
+          },
+          "shap_ranking": {
+            "oldpeak": 0.8696492678098526,
+            "exercise_angina": 0.4693436533201642,
+            "chest_pain_type": 0.4517058106877105,
+            "fasting_blood_sugar": 0.430180524798354,
+            "sex": 0.2553173824768763,
+            "max_heart_rate": 0.17280940977824102,
+            "ST_slope": 0.1510777541954273,
+            "age": 0.14694838081015382,
+            "cholesterol": 0.07756990177549807,
+            "resting_bp_s": 0.07611978176639472,
+            "resting_ecg": 0.035754548688583264
+          },
+          "lime_ranking": null,
+          "shap_error": null,
+          "lime_error": "Input contains NaN.",
+          "rule_shap_overlap": 0.6666666666666666,
+          "rule_lime_overlap": null
+        }
+      ]
+    },
+    {
+      "client_id": 4,
+      "n_train": 38,
+      "n_test": 17,
+      "n_rules": 11,
+      "fidelity_metrics": {
+        "completeness": 0.9411764705882353,
+        "correctness": 0.6470588235294118,
+        "fidelity": 0.6470588235294118,
+        "num_rules": 11,
+        "avg_length": 1.9090909090909092,
+        "class_coverage": 1.0,
+        "overlap": 0.12299465240641706,
+        "avg_support": 0.299,
+        "avg_confidence": 0.864,
+        "avg_zhang": 0.7528181818181818
+      },
+      "instance_explanations": [
+        {
+          "fired_rule": {
+            "antecedents": "exercise_angina=0 AND ST_slope=1",
+            "consequent": "class=0",
+            "confidence": 0.938,
+            "support": 0.395
+          },
+          "shap_ranking": {
+            "chest_pain_type": 1.240382088844972,
+            "ST_slope": 0.4827672596470424,
+            "max_heart_rate": 0.47623645823389515,
+            "exercise_angina": 0.47051995320317197,
+            "sex": 0.24432285404485773,
+            "fasting_blood_sugar": 0.23306994377619805,
+            "cholesterol": 0.1322000767868262,
+            "resting_bp_s": 0.123308392796119,
+            "resting_ecg": 0.05694976591671847,
+            "age": 0.02951956223586858,
+            "oldpeak": 0.015876962272883426
+          },
+          "lime_ranking": null,
+          "shap_error": null,
+          "lime_error": "Input contains NaN.",
+          "rule_shap_overlap": 0.25,
+          "rule_lime_overlap": null
+        },
+        {
+          "fired_rule": {
+            "antecedents": "sex=1 AND chest_pain_type=4",
+            "consequent": "class=1",
+            "confidence": 0.944,
+            "support": 0.447
+          },
+          "shap_ranking": {
+            "chest_pain_type": 0.7235562184929004,
+            "ST_slope": 0.4827672596470424,
+            "exercise_angina": 0.47051995320317197,
+            "sex": 0.24432285404485773,
+            "fasting_blood_sugar": 0.23306994377619805,
+            "oldpeak": 0.23135002169058733,
+            "max_heart_rate": 0.147797521520864,
+            "age": 0.10430245323340233,
+            "resting_ecg": 0.05694976591671847,
+            "resting_bp_s": 0.02485663253992913,
+            "cholesterol": 0.010253528750191981
+          },
+          "lime_ranking": null,
+          "shap_error": null,
+          "lime_error": "Input contains NaN.",
+          "rule_shap_overlap": 0.25,
+          "rule_lime_overlap": null
+        },
+        {
+          "fired_rule": {
+            "antecedents": "sex=0 AND ST_slope=1",
+            "consequent": "class=0",
+            "confidence": 1.0,
+            "support": 0.132
+          },
+          "shap_ranking": {
+            "sex": 0.9162107026682164,
+            "chest_pain_type": 0.7235562184929004,
+            "exercise_angina": 0.6469649356543614,
+            "cholesterol": 0.4831681906483588,
+            "ST_slope": 0.4827672596470424,
+            "max_heart_rate": 0.2962266563815608,
+            "fasting_blood_sugar": 0.23306994377619805,
+            "resting_bp_s": 0.123308392796119,
+            "oldpeak": 0.10206618603996499,
+            "resting_ecg": 0.05694976591671847,
+            "age": 0.04821528498525202
+          },
+          "lime_ranking": null,
+          "shap_error": null,
+          "lime_error": "Input contains NaN.",
+          "rule_shap_overlap": 0.25,
+          "rule_lime_overlap": null
+        }
+      ]
+    }
+  ]
+}

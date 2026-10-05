@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "FedNeuroXAI: client-side neuro-symbolic rule mining for federated clinical models"
+type: software
+license: MIT
+authors:
+  - family-names: Rehman
+    given-names: Zia Ur
+    affiliation: University of Limerick
+  - family-names: Mota Dias
+    given-names: Douglas
+    affiliation: Atlantic Technological University
+  - family-names: Islam
+    given-names: Saif Ul
+    affiliation: University of Warwick
+  - family-names: Ryan
+    given-names: Conor
+    affiliation: University of Limerick
+preferred-citation:
+  type: conference-paper
+  title: "Neuro-Symbolic Rule Mining at the Edge: Per-Client Explanation for Federated Clinical Models"
+  authors:
+    - family-names: Rehman
+      given-names: Zia Ur
+    - family-names: Mota Dias
+      given-names: Douglas
+    - family-names: Islam
+      given-names: Saif Ul
+    - family-names: Ryan
+      given-names: Conor
+  collection-title: "Proceedings of the 16th International Conference on the Internet of Things (IoT 2026)"
+  publisher:
+    name: ACM
+  conference:
+    name: "IoT 2026"
+    city: "Newcastle upon Tyne"
+    country: GB
+    date-start: 2026-11-17
+    date-end: 2026-11-20
+  year: 2026
+  # doi: 10.1145/XXXXXXX.XXXXXXX   # add once assigned

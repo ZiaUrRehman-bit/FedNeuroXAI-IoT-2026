@@ -1,0 +1,546 @@
+{
+  "dataset": "diabetes",
+  "model": "linear_svm",
+  "partition": "iid",
+  "n_clients": 5,
+  "alpha": 0.5,
+  "n_rounds": 100,
+  "n_bins": 4,
+  "rule_epochs": 15,
+  "global_metrics": {
+    "accuracy": 0.7619,
+    "f1": 0.7629
+  },
+  "per_client": [
+    {
+      "client_id": 0,
+      "n_train": 75,
+      "n_test": 33,
+      "n_rules": 67,
+      "fidelity_metrics": {
+        "completeness": 0.9696969696969697,
+        "correctness": 0.8787878787878788,
+        "fidelity": 0.8787878787878788,
+        "num_rules": 67,
+        "avg_length": 1.9701492537313432,
+        "class_coverage": 1.0,
+        "overlap": 0.013362937379219758,
+        "avg_support": 0.08776119402985075,
+        "avg_confidence": 0.9159999999999999,
+        "avg_zhang": 0.5083283582089552
+      },
+      "instance_explanations": [
+        {
+          "fired_rule": {
+            "antecedents": "preg=(4.0, 7.0] AND plas=(117.0, 143.0]",
+            "consequent": "class=1",
+            "confidence": 0.8,
+            "support": 0.053
+          },
+          "shap_ranking": {
+            "plas": 15.454755273559435,
+            "preg": 8.564596512077106,
+            "mass": 4.618459491527803,
+            "pres": 3.953486841110533,
+            "age": 2.3087425307968923,
+            "skin": 1.7062890183699455,
+            "pedi": 1.5606795678013836,
+            "insu": 0.575686522573557
+          },
+          "lime_ranking": {
+            "preg": 0.2565866949916645,
+            "plas": 0.12541560105148605,
+            "pedi": 0.06612048685491768,
+            "age": 0.051931175954539326,
+            "pres": 0.04601415255168499
+          },
+          "shap_error": null,
+          "lime_error": null,
+          "rule_shap_overlap": 0.6666666666666666,
+          "rule_lime_overlap": 0.6666666666666666
+        },
+        {
+          "fired_rule": {
+            "antecedents": "plas=(143.0, 196.0]",
+            "consequent": "class=1",
+            "confidence": 1.0,
+            "support": 0.213
+          },
+          "shap_ranking": {
+            "plas": 47.34316586679627,
+            "preg": 17.12919302415421,
+            "mass": 4.646968500734767,
+            "skin": 1.7062890183699455,
+            "pedi": 1.627950238827305,
+            "insu": 0.575686522573557,
+            "pres": 0.5335155252709716,
+            "age": 0.49193545450393833
+          },
+          "lime_ranking": {
+            "plas": 0.7004199863086248,
+            "preg": 0.2556299618638367,
+            "mass": 0.07405646223488366,
+            "pedi": 0.03865437414778509,
+            "age": 0.03077822162178916
+          },
+          "shap_error": null,
+          "lime_error": null,
+          "rule_shap_overlap": 0.3333333333333333,
+          "rule_lime_overlap": 0.3333333333333333
+        },
+        {
+          "fired_rule": {
+            "antecedents": "insu=(-0.001, 107.0] AND age=(20.999, 24.0]",
+            "consequent": "class=0",
+            "confidence": 0.933,
+            "support": 0.187
+          },
+          "shap_ranking": {
+            "plas": 12.488391497444377,
+            "preg": 11.419462016102809,
+            "pres": 1.901504051606796,
+            "age": 1.7441347932412359,
+            "skin": 1.7062890183699455,
+            "insu": 0.575686522573557,
+            "pedi": 0.32962628802701616,
+            "mass": 0.1639268029400315
+          },
+          "lime_ranking": {
+            "preg": 0.19627498127925636,
+            "plas": 0.1395348933220268,
+            "age": 0.05386382669392732,
+            "pres": 0.043631742223393145,
+            "mass": 0.032368296170453933
+          },
+          "shap_error": null,
+          "lime_error": null,
+          "rule_shap_overlap": 0.0,
+          "rule_lime_overlap": 0.25
+        }
+      ]
+    },
+    {
+      "client_id": 1,
+      "n_train": 75,
+      "n_test": 33,
+      "n_rules": 69,
+      "fidelity_metrics": {
+        "completeness": 0.9393939393939394,
+        "correctness": 0.8181818181818182,
+        "fidelity": 0.8181818181818182,
+        "num_rules": 69,
+        "avg_length": 1.9275362318840579,
+        "class_coverage": 1.0,
+        "overlap": 0.010721020951200118,
+        "avg_support": 0.09313043478260871,
+        "avg_confidence": 0.9015652173913044,
+        "avg_zhang": 0.4308405797101449
+      },
+      "instance_explanations": [
+        {
+          "fired_rule": {
+            "antecedents": "skin=(24.5, 32.0] AND age=(20.999, 25.0]",
+            "consequent": "class=0",
+            "confidence": 1.0,
+            "support": 0.067
+          },
+          "shap_ranking": {
+            "plas": 37.39101539793026,
+            "mass": 8.645357042011145,
+            "preg": 3.4829359149113563,
+            "age": 1.6211509296152515,
+            "pres": 0.8276330584331738,
+            "insu": 0.7969313429998196,
+            "skin": 0.6584525570889149,
+            "pedi": 0.011166931390302833
+          },
+          "lime_ranking": {
+            "plas": 0.44029234009900964,
+            "mass": 0.22602078353122268,
+            "preg": 0.09310261866680511,
+            "age": 0.015040132794880971,
+            "pedi": 0.014432183338474616
+          },
+          "shap_error": null,
+          "lime_error": null,
+          "rule_shap_overlap": 0.0,
+          "rule_lime_overlap": 0.0
+        },
+        {
+          "fired_rule": {
+            "antecedents": "preg=(-0.001, 1.0] AND age=(20.999, 25.0]",
+            "consequent": "class=0",
+            "confidence": 1.0,
+            "support": 0.12
+          },
+          "shap_ranking": {
+            "plas": 31.45828784570015,
+            "preg": 6.337801418937058,
+            "pres": 1.6826258873930642,
+            "age": 1.6211509296152515,
+            "mass": 1.518104740270712,
+            "pedi": 1.266975818102209,
+            "skin": 0.9865850606215966,
+            "insu": 0.7969313429998196
+          },
+          "lime_ranking": {
+            "plas": 0.45101173369053593,
+            "preg": 0.15101112152789337,
+            "mass": 0.06477405215012258,
+            "age": 0.03729741276269187,
+            "pedi": 0.023083981353144573
+          },
+          "shap_error": null,
+          "lime_error": null,
+          "rule_shap_overlap": 0.25,
+          "rule_lime_overlap": 0.25
+        },
+        {
+          "fired_rule": {
+            "antecedents": "preg=(6.0, 13.0] AND pedi=(0.259, 0.474]",
+            "consequent": "class=1",
+            "confidence": 1.0,
+            "support": 0.04
+          },
+          "shap_ranking": {
+            "preg": 16.501122613268556,
+            "plas": 11.435332356923533,
+            "mass": 2.9435552006188,
+            "skin": 2.2947399747052217,
+            "pres": 2.2503411258224313,
+            "pedi": 1.3746088917436838,
+            "age": 1.1739368800662164,
+            "insu": 0.7969313429998196
+          },
+          "lime_ranking": {
+            "plas": 0.3124943816337325,
+            "preg": 0.22401387729448127,
+            "mass": 0.10778783450282178,
+            "pres": 0.08242552793630084,
+            "skin": 0.04409230774482254
+          },
+          "shap_error": null,
+          "lime_error": null,
+          "rule_shap_overlap": 0.25,
+          "rule_lime_overlap": 0.25
+        }
+      ]
+    },
+    {
+      "client_id": 2,
+      "n_train": 74,
+      "n_test": 33,
+      "n_rules": 73,
+      "fidelity_metrics": {
+        "completeness": 0.9696969696969697,
+        "correctness": 0.8181818181818182,
+        "fidelity": 0.8181818181818182,
+        "num_rules": 73,
+        "avg_length": 1.9452054794520548,
+        "class_coverage": 1.0,
+        "overlap": 0.009570591762372694,
+        "avg_support": 0.09326027397260274,
+        "avg_confidence": 0.9186438356164385,
+        "avg_zhang": 0.4551643835616439
+      },
+      "instance_explanations": [
+        {
+          "fired_rule": {
+            "antecedents": "plas=(144.0, 197.0]",
+            "consequent": "class=1",
+            "confidence": 1.0,
+            "support": 0.216
+          },
+          "shap_ranking": {
+            "plas": 24.591155703993802,
+            "mass": 4.14806083961293,
+            "age": 3.8851720554572404,
+            "skin": 2.229113473998685,
+            "pedi": 2.059558864129619,
+            "preg": 1.2561408217713086,
+            "pres": 0.9575919684350773,
+            "insu": 0.6634344683019391
+          },
+          "lime_ranking": {
+            "plas": 0.6421095675859071,
+            "mass": 0.07919589781176285,
+            "age": 0.04014549402788713,
+            "pedi": 0.03969037737425469,
+            "pres": 0.02162388458304579
+          },
+          "shap_error": null,
+          "lime_error": null,
+          "rule_shap_overlap": 0.3333333333333333,
+          "rule_lime_overlap": 0.3333333333333333
+        },
+        {
+          "fired_rule": {
+            "antecedents": "plas=(70.999, 102.5]",
+            "consequent": "class=0",
+            "confidence": 1.0,
+            "support": 0.243
+          },
+          "shap_ranking": {
+            "plas": 25.095437545933358,
+            "preg": 10.163321194331498,
+            "mass": 5.217148684873998,
+            "pedi": 2.1604648706685015,
+            "age": 1.9845123448738424,
+            "insu": 0.6634344683019391,
+            "skin": 0.3959465542627695,
+            "pres": 0.0683994263167911
+          },
+          "lime_ranking": {
+            "plas": 0.487893578199108,
+            "preg": 0.21102133904860068,
+            "mass": 0.06684255400041583,
+            "pedi": 0.053337995347272335,
+            "skin": 0.03683801378977525
+          },
+          "shap_error": null,
+          "lime_error": null,
+          "rule_shap_overlap": 0.3333333333333333,
+          "rule_lime_overlap": 0.3333333333333333
+        },
+        {
+          "fired_rule": {
+            "antecedents": "preg=(6.0, 17.0] AND insu=(133.5, 543.0]",
+            "consequent": "class=1",
+            "confidence": 0.75,
+            "support": 0.041
+          },
+          "shap_ranking": {
+            "mass": 11.8098570639839,
+            "preg": 6.965871829822713,
+            "pedi": 2.3690039508488585,
+            "skin": 1.3803440648608152,
+            "pres": 0.9575919684350773,
+            "insu": 0.9490277822623491,
+            "plas": 0.6229363929841607,
+            "age": 0.2515579028713322
+          },
+          "lime_ranking": {
+            "preg": 0.3466029924531522,
+            "mass": 0.3325210310508665,
+            "plas": 0.09457030007636326,
+            "pedi": 0.046466961567309936,
+            "pres": 0.020322081521925335
+          },
+          "shap_error": null,
+          "lime_error": null,
+          "rule_shap_overlap": 0.25,
+          "rule_lime_overlap": 0.25
+        }
+      ]
+    },
+    {
+      "client_id": 3,
+      "n_train": 74,
+      "n_test": 33,
+      "n_rules": 53,
+      "fidelity_metrics": {
+        "completeness": 0.9393939393939394,
+        "correctness": 0.696969696969697,
+        "fidelity": 0.696969696969697,
+        "num_rules": 53,
+        "avg_length": 1.8679245283018868,
+        "class_coverage": 1.0,
+        "overlap": 0.015833223380393325,
+        "avg_support": 0.11949056603773589,
+        "avg_confidence": 0.8733962264150943,
+        "avg_zhang": 0.40045283018867933
+      },
+      "instance_explanations": [
+        {
+          "fired_rule": {
+            "antecedents": "insu=(117.5, 510.0] AND pedi=(0.375, 0.558]",
+            "consequent": "class=1",
+            "confidence": 1.0,
+            "support": 0.054
+          },
+          "shap_ranking": {
+            "plas": 10.219123208716363,
+            "mass": 8.281867174622386,
+            "preg": 6.394898729017571,
+            "skin": 2.727874879368362,
+            "pres": 1.6997257439722622,
+            "age": 1.0090266992950099,
+            "insu": 0.798281311395641,
+            "pedi": 0.17167475245815234
+          },
+          "lime_ranking": {
+            "mass": 0.3662797633184446,
+            "plas": 0.25893177284471114,
+            "preg": 0.13877725770723004,
+            "pres": 0.08922219172222187,
+            "insu": 0.030253313814218384
+          },
+          "shap_error": null,
+          "lime_error": null,
+          "rule_shap_overlap": 0.0,
+          "rule_lime_overlap": 0.0
+        },
+        {
+          "fired_rule": null,
+          "shap_ranking": {
+            "plas": 8.735941320658835,
+            "preg": 3.54003322499187,
+            "mass": 2.758246640773546,
+            "pedi": 1.7320852375754316,
+            "skin": 0.8684573593498314,
+            "pres": 0.6942541771154308,
+            "age": 0.5897635278427896,
+            "insu": 0.4007906170704909
+          },
+          "lime_ranking": {
+            "plas": 0.2733728537764126,
+            "mass": 0.05573268051341109,
+            "pedi": 0.034024256248337936,
+            "preg": 0.02942067591282011,
+            "skin": 0.023398812288825104
+          },
+          "shap_error": null,
+          "lime_error": null,
+          "rule_shap_overlap": null,
+          "rule_lime_overlap": null
+        },
+        {
+          "fired_rule": {
+            "antecedents": "plas=(-0.001, 97.0]",
+            "consequent": "class=0",
+            "confidence": 1.0,
+            "support": 0.23
+          },
+          "shap_ranking": {
+            "plas": 30.24207869749298,
+            "mass": 5.9726374288584845,
+            "pres": 2.7462369666191675,
+            "age": 1.2885354802631566,
+            "pedi": 0.9049250666406987,
+            "preg": 0.6851677209661681,
+            "skin": 0.5534501559584568,
+            "insu": 0.041699023782034626
+          },
+          "lime_ranking": {
+            "plas": 0.396303918082017,
+            "mass": 0.07757835018355638,
+            "pres": 0.05777632880927942,
+            "pedi": 0.03815889347207021,
+            "preg": 0.03771974285793201
+          },
+          "shap_error": null,
+          "lime_error": null,
+          "rule_shap_overlap": 0.3333333333333333,
+          "rule_lime_overlap": 0.3333333333333333
+        }
+      ]
+    },
+    {
+      "client_id": 4,
+      "n_train": 74,
+      "n_test": 33,
+      "n_rules": 53,
+      "fidelity_metrics": {
+        "completeness": 0.9090909090909091,
+        "correctness": 0.6363636363636364,
+        "fidelity": 0.6363636363636364,
+        "num_rules": 53,
+        "avg_length": 1.9245283018867925,
+        "class_coverage": 1.0,
+        "overlap": 0.009455952852179329,
+        "avg_support": 0.09766037735849055,
+        "avg_confidence": 0.8926981132075472,
+        "avg_zhang": 0.4682452830188679
+      },
+      "instance_explanations": [
+        {
+          "fired_rule": {
+            "antecedents": "pres=(81.0, 110.0] AND insu=(138.0, 545.0]",
+            "consequent": "class=1",
+            "confidence": 1.0,
+            "support": 0.068
+          },
+          "shap_ranking": {
+            "preg": 12.789797458035144,
+            "mass": 4.123115456556843,
+            "pres": 1.9220238795018336,
+            "age": 1.5820197002797107,
+            "insu": 1.0411256261550441,
+            "plas": 0.9492364083568176,
+            "skin": 0.7415794579838609,
+            "pedi": 0.17907452627100365
+          },
+          "lime_ranking": {
+            "preg": 0.20589553448913558,
+            "plas": 0.1928547475172891,
+            "mass": 0.0725050549640473,
+            "pres": 0.062367321641620135,
+            "age": 0.055697827519594414
+          },
+          "shap_error": null,
+          "lime_error": null,
+          "rule_shap_overlap": 0.25,
+          "rule_lime_overlap": 0.0
+        },
+        {
+          "fired_rule": {
+            "antecedents": "preg=(-0.001, 1.0] AND pres=(-0.001, 64.0]",
+            "consequent": "class=0",
+            "confidence": 1.0,
+            "support": 0.108
+          },
+          "shap_ranking": {
+            "plas": 19.489010009075905,
+            "mass": 12.319455603558339,
+            "preg": 9.934931954009445,
+            "skin": 2.430368076165397,
+            "pres": 2.18194169950564,
+            "pedi": 2.1148553557129266,
+            "age": 1.8615284812478576,
+            "insu": 0.5713366244092439
+          },
+          "lime_ranking": {
+            "plas": 0.665840346522168,
+            "mass": 0.2495333430184042,
+            "preg": 0.1716298599857093,
+            "pres": 0.07496769970682318,
+            "pedi": 0.03424070227924568
+          },
+          "shap_error": null,
+          "lime_error": null,
+          "rule_shap_overlap": 0.25,
+          "rule_lime_overlap": 0.25
+        },
+        {
+          "fired_rule": {
+            "antecedents": "preg=(-0.001, 1.0] AND plas=(56.999, 100.0]",
+            "consequent": "class=0",
+            "confidence": 1.0,
+            "support": 0.122
+          },
+          "shap_ranking": {
+            "plas": 23.523264744592378,
+            "mass": 18.733982675124732,
+            "preg": 9.934931954009445,
+            "pres": 2.8659359626735523,
+            "age": 1.8615284812478576,
+            "skin": 1.2272155632122304,
+            "insu": 0.5713366244092439,
+            "pedi": 0.5138133852959901
+          },
+          "lime_ranking": {
+            "plas": 0.5183209551866229,
+            "mass": 0.23839158196159738,
+            "preg": 0.18951944286383973,
+            "pres": 0.05576783955669391,
+            "age": 0.045052631014785585
+          },
+          "shap_error": null,
+          "lime_error": null,
+          "rule_shap_overlap": 0.6666666666666666,
+          "rule_lime_overlap": 0.6666666666666666
+        }
+      ]
+    }
+  ]
+}

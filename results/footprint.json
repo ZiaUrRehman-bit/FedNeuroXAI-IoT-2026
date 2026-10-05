@@ -1,0 +1,23 @@
+{
+  "rule_extraction": {
+    "n_rules": 337,
+    "wall_seconds": 20.46,
+    "rss_delta_mb": 75.8,
+    "rss_after_mb": 359.8
+  },
+  "llm_load": {
+    "wall_seconds": 12.92,
+    "rss_delta_mb": 1144.9,
+    "rss_after_mb": 1745.3
+  },
+  "llm_generate": {
+    "wall_seconds": 274.55,
+    "rss_delta_mb": 10958.8,
+    "rss_after_mb": 12704.1,
+    "n_new_tokens_requested": 400
+  },
+  "disk_footprint": {
+    "llama3b_dir_gb": 11.98,
+    "mined_ruleset_kb": 58.3
+  }
+}

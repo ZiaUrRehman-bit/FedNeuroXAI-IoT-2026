@@ -1,0 +1,222 @@
+[
+  {
+    "dataset": "Diabetes",
+    "client": 1,
+    "model": "logistic_regression",
+    "n_rules": 143,
+    "feature": "plas",
+    "shap_norm": 1.0,
+    "lime_norm": 1.0,
+    "lime_seen": true,
+    "rule_pct": 39.2
+  },
+  {
+    "dataset": "Diabetes",
+    "client": 1,
+    "model": "logistic_regression",
+    "n_rules": 143,
+    "feature": "mass",
+    "shap_norm": 0.685,
+    "lime_norm": 0.307,
+    "lime_seen": true,
+    "rule_pct": 22.4
+  },
+  {
+    "dataset": "Diabetes",
+    "client": 1,
+    "model": "logistic_regression",
+    "n_rules": 143,
+    "feature": "insu",
+    "shap_norm": 0.564,
+    "lime_norm": 0.362,
+    "lime_seen": true,
+    "rule_pct": 27.3
+  },
+  {
+    "dataset": "Diabetes",
+    "client": 1,
+    "model": "logistic_regression",
+    "n_rules": 143,
+    "feature": "preg",
+    "shap_norm": 0.508,
+    "lime_norm": 0.326,
+    "lime_seen": true,
+    "rule_pct": 23.8
+  },
+  {
+    "dataset": "Diabetes",
+    "client": 1,
+    "model": "logistic_regression",
+    "n_rules": 143,
+    "feature": "age",
+    "shap_norm": 0.348,
+    "lime_norm": 0.193,
+    "lime_seen": true,
+    "rule_pct": 25.2
+  },
+  {
+    "dataset": "WBC",
+    "client": 0,
+    "model": "gaussian_nb",
+    "n_rules": 1340,
+    "feature": "worst_area",
+    "shap_norm": 1.0,
+    "lime_norm": 0.959,
+    "lime_seen": true,
+    "rule_pct": 7.2
+  },
+  {
+    "dataset": "WBC",
+    "client": 0,
+    "model": "gaussian_nb",
+    "n_rules": 1340,
+    "feature": "area_error",
+    "shap_norm": 0.711,
+    "lime_norm": 0.513,
+    "lime_seen": true,
+    "rule_pct": 6.3
+  },
+  {
+    "dataset": "WBC",
+    "client": 0,
+    "model": "gaussian_nb",
+    "n_rules": 1340,
+    "feature": "worst_concave_points",
+    "shap_norm": 0.696,
+    "lime_norm": 0.348,
+    "lime_seen": true,
+    "rule_pct": 7.6
+  },
+  {
+    "dataset": "WBC",
+    "client": 0,
+    "model": "gaussian_nb",
+    "n_rules": 1340,
+    "feature": "mean_concave_points",
+    "shap_norm": 0.682,
+    "lime_norm": 1.0,
+    "lime_seen": true,
+    "rule_pct": 7.5
+  },
+  {
+    "dataset": "WBC",
+    "client": 0,
+    "model": "gaussian_nb",
+    "n_rules": 1340,
+    "feature": "worst_perimeter",
+    "shap_norm": 0.651,
+    "lime_norm": 0.827,
+    "lime_seen": true,
+    "rule_pct": 7.6
+  },
+  {
+    "dataset": "Heart",
+    "client": 1,
+    "model": "logistic_regression",
+    "n_rules": 198,
+    "feature": "fasting_blood_sugar",
+    "shap_norm": 1.0,
+    "lime_norm": null,
+    "lime_seen": null,
+    "rule_pct": 13.6
+  },
+  {
+    "dataset": "Heart",
+    "client": 1,
+    "model": "logistic_regression",
+    "n_rules": 198,
+    "feature": "exercise_angina",
+    "shap_norm": 0.849,
+    "lime_norm": null,
+    "lime_seen": null,
+    "rule_pct": 17.2
+  },
+  {
+    "dataset": "Heart",
+    "client": 1,
+    "model": "logistic_regression",
+    "n_rules": 198,
+    "feature": "oldpeak",
+    "shap_norm": 0.843,
+    "lime_norm": null,
+    "lime_seen": null,
+    "rule_pct": 24.2
+  },
+  {
+    "dataset": "Heart",
+    "client": 1,
+    "model": "logistic_regression",
+    "n_rules": 198,
+    "feature": "cholesterol",
+    "shap_norm": 0.789,
+    "lime_norm": null,
+    "lime_seen": null,
+    "rule_pct": 19.2
+  },
+  {
+    "dataset": "Heart",
+    "client": 1,
+    "model": "logistic_regression",
+    "n_rules": 198,
+    "feature": "chest_pain_type",
+    "shap_norm": 0.706,
+    "lime_norm": null,
+    "lime_seen": null,
+    "rule_pct": 12.6
+  },
+  {
+    "dataset": "FetalHeartRate",
+    "client": 0,
+    "model": "logistic_regression",
+    "n_rules": 1147,
+    "feature": "Gestational_Age_days",
+    "shap_norm": 1.0,
+    "lime_norm": 1.0,
+    "lime_seen": true,
+    "rule_pct": 7.1
+  },
+  {
+    "dataset": "FetalHeartRate",
+    "client": 0,
+    "model": "logistic_regression",
+    "n_rules": 1147,
+    "feature": "DR_T1_s2_bpm",
+    "shap_norm": 0.924,
+    "lime_norm": 0.36,
+    "lime_seen": true,
+    "rule_pct": 2.7
+  },
+  {
+    "dataset": "FetalHeartRate",
+    "client": 0,
+    "model": "logistic_regression",
+    "n_rules": 1147,
+    "feature": "LCZ_TER_0_bits",
+    "shap_norm": 0.897,
+    "lime_norm": 0.505,
+    "lime_seen": true,
+    "rule_pct": 8.0
+  },
+  {
+    "dataset": "FetalHeartRate",
+    "client": 0,
+    "model": "logistic_regression",
+    "n_rules": 1147,
+    "feature": "MF_ms_Hz",
+    "shap_norm": 0.739,
+    "lime_norm": 0.255,
+    "lime_seen": true,
+    "rule_pct": 9.1
+  },
+  {
+    "dataset": "FetalHeartRate",
+    "client": 0,
+    "model": "logistic_regression",
+    "n_rules": 1147,
+    "feature": "LCZ_BIN_0_bits",
+    "shap_norm": 0.68,
+    "lime_norm": 0.191,
+    "lime_seen": true,
+    "rule_pct": 6.9
+  }
+]

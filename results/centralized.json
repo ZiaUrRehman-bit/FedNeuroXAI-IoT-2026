@@ -1,0 +1,202 @@
+[
+  {
+    "dataset": "Diabetes",
+    "model": "logistic_regression",
+    "n_train": 375,
+    "n_test": 162,
+    "n_rules": 149,
+    "fidelity": 0.8209876543209876,
+    "completeness": 1.0,
+    "acc_holdout": 0.7316
+  },
+  {
+    "dataset": "Diabetes",
+    "model": "linear_svm",
+    "n_train": 375,
+    "n_test": 162,
+    "n_rules": 175,
+    "fidelity": 0.8333333333333334,
+    "completeness": 1.0,
+    "acc_holdout": 0.7489
+  },
+  {
+    "dataset": "Diabetes",
+    "model": "mlp",
+    "n_train": 375,
+    "n_test": 162,
+    "n_rules": 166,
+    "fidelity": 0.8209876543209876,
+    "completeness": 1.0,
+    "acc_holdout": 0.7359
+  },
+  {
+    "dataset": "Diabetes",
+    "model": "gaussian_nb",
+    "n_train": 375,
+    "n_test": 162,
+    "n_rules": 175,
+    "fidelity": 0.8765432098765432,
+    "completeness": 1.0,
+    "acc_holdout": 0.7403
+  },
+  {
+    "dataset": "Diabetes",
+    "model": "lda",
+    "n_train": 375,
+    "n_test": 162,
+    "n_rules": 195,
+    "fidelity": 0.8827160493827161,
+    "completeness": 1.0,
+    "acc_holdout": 0.7446
+  },
+  {
+    "dataset": "WBC",
+    "model": "logistic_regression",
+    "n_train": 278,
+    "n_test": 120,
+    "n_rules": 674,
+    "fidelity": 0.9166666666666666,
+    "completeness": 1.0,
+    "acc_holdout": 0.9357
+  },
+  {
+    "dataset": "WBC",
+    "model": "linear_svm",
+    "n_train": 278,
+    "n_test": 120,
+    "n_rules": 1830,
+    "fidelity": 0.6333333333333333,
+    "completeness": 0.9916666666666667,
+    "acc_holdout": 0.9357
+  },
+  {
+    "dataset": "WBC",
+    "model": "mlp",
+    "n_train": 278,
+    "n_test": 120,
+    "n_rules": 1951,
+    "fidelity": 0.65,
+    "completeness": 1.0,
+    "acc_holdout": 0.9766
+  },
+  {
+    "dataset": "WBC",
+    "model": "gaussian_nb",
+    "n_train": 278,
+    "n_test": 120,
+    "n_rules": 1738,
+    "fidelity": 0.8666666666666667,
+    "completeness": 1.0,
+    "acc_holdout": 0.9298
+  },
+  {
+    "dataset": "WBC",
+    "model": "lda",
+    "n_train": 278,
+    "n_test": 120,
+    "n_rules": 1853,
+    "fidelity": 0.8416666666666667,
+    "completeness": 1.0,
+    "acc_holdout": 0.9415
+  },
+  {
+    "dataset": "Heart",
+    "model": "logistic_regression",
+    "n_train": 583,
+    "n_test": 250,
+    "n_rules": 223,
+    "fidelity": 0.928,
+    "completeness": 1.0,
+    "acc_holdout": 0.8263
+  },
+  {
+    "dataset": "Heart",
+    "model": "linear_svm",
+    "n_train": 583,
+    "n_test": 250,
+    "n_rules": 164,
+    "fidelity": 0.924,
+    "completeness": 1.0,
+    "acc_holdout": 0.8067
+  },
+  {
+    "dataset": "Heart",
+    "model": "mlp",
+    "n_train": 583,
+    "n_test": 250,
+    "n_rules": 183,
+    "fidelity": 0.908,
+    "completeness": 1.0,
+    "acc_holdout": 0.8515
+  },
+  {
+    "dataset": "Heart",
+    "model": "gaussian_nb",
+    "n_train": 583,
+    "n_test": 250,
+    "n_rules": 194,
+    "fidelity": 0.868,
+    "completeness": 1.0,
+    "acc_holdout": 0.8375
+  },
+  {
+    "dataset": "Heart",
+    "model": "lda",
+    "n_train": 583,
+    "n_test": 250,
+    "n_rules": 190,
+    "fidelity": 0.908,
+    "completeness": 1.0,
+    "acc_holdout": 0.8431
+  },
+  {
+    "dataset": "FetalHeartRate",
+    "model": "logistic_regression",
+    "n_train": 128,
+    "n_test": 55,
+    "n_rules": 2294,
+    "fidelity": 0.8181818181818182,
+    "completeness": 1.0,
+    "acc_holdout": 0.8354
+  },
+  {
+    "dataset": "FetalHeartRate",
+    "model": "linear_svm",
+    "n_train": 128,
+    "n_test": 55,
+    "n_rules": 795,
+    "fidelity": 0.8909090909090909,
+    "completeness": 1.0,
+    "acc_holdout": 0.8481
+  },
+  {
+    "dataset": "FetalHeartRate",
+    "model": "mlp",
+    "n_train": 128,
+    "n_test": 55,
+    "n_rules": 1246,
+    "fidelity": 0.7272727272727273,
+    "completeness": 1.0,
+    "acc_holdout": 0.7468
+  },
+  {
+    "dataset": "FetalHeartRate",
+    "model": "gaussian_nb",
+    "n_train": 128,
+    "n_test": 55,
+    "n_rules": 1511,
+    "fidelity": 0.7818181818181819,
+    "completeness": 1.0,
+    "acc_holdout": 0.7722
+  },
+  {
+    "dataset": "FetalHeartRate",
+    "model": "lda",
+    "n_train": 128,
+    "n_test": 55,
+    "n_rules": 2778,
+    "fidelity": 0.6363636363636364,
+    "completeness": 1.0,
+    "acc_holdout": 0.8354
+  }
+]
